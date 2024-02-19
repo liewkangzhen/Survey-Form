@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Basketball Survey Form</h1>
+    <p id="description">Make the world a better place with ball!</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name <input type="text" id="name" placeholder="Enter your name" required></label>
+        <label for="email" id="email-label">Email <input type="email" id="email" placeholder="Enter your Email" required></label>
+        <label for="number" id="number-label">Age <small>(optional)</small><input id="number" type="number" min="13" max="85" placeholder="Age"></label>
+        <label id="position-label">What position do you play?
+          <select id="dropdown">
+            <option>Point Guard</option>
+            <option>Shooting Guard</option>
+            <option>Small Forward</option>
+            <option>Power Forward</option>
+            <option>Center</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Which league do you currently play for?</legend>
+        <label><input type="radio" name="league" value="nba" checked>NBA</label><br>
+        <label><input type="radio" name="league" value="euroleague">Euroleague</label><br>
+        <label><input type="radio" name="league" value="p-league">P-league</label>
+      </fieldset>
+      <fieldset>
+        <legend>What are your strengths?</legend>
+        <label><input type="checkbox" value="1" checked>Isolation</label><br>
+        <label><input type="checkbox" value="2">Transition</label><br>
+        <label><input type="checkbox" value="3">Cuts</label><br>
+        <label><input type="checkbox" value="4">Spotup</label><br>
+        <label><input type="checkbox" value="5">Postup</label>
+      </fieldset>
+      <fieldset>
+        <legend>Write something short on who you think is the GOAT.</legend>
+        <label>
+          <textarea placeholder="My GOAT is......" id="goat"></textarea>
+        </label>
+      </fieldset>
+      <fieldset id="button">
+        <input type="submit" id="submit">
+      </fieldset>
+    </form>
+  </body>
+</html>
